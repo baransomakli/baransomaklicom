@@ -1,0 +1,38 @@
+.hero {
+	margin-top: 70px;
+	margin-bottom: 100px;
+
+	@include mdq(xs) {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	&-title {
+		@include regular;
+		color: $color-white;
+		font-size: 62px;
+		line-height: 90px;
+		a {
+			display: inline;
+			color: $color-white;
+			// text-decoration: underline;
+			// background-color: $color-white;
+		}
+
+		@include mdq(xs) {
+			font-size: 24px;
+			line-height: 32px;
+		}
+
+	}
+	&-image {
+		margin-top: 100px;
+
+		@include mdq(xs) {
+			margin-top: 40px;
+		}
+		img {
+			width: 100%;
+		}
+	}
+}

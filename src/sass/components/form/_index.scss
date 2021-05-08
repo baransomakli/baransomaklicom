@@ -1,0 +1,79 @@
+$form-label-font-size: 16px;
+$form-label-font-weight: 700;
+
+$form-height: 40px;
+$form-padding: 12px;
+$form-font-size: 14px;
+$form-font-weight: 700;
+$form-border-radius: 4px;
+$form-margin-bottom: 12px;
+
+$form-default-label-color: #000;
+$form-default-border: 1px solid rgba(#000, 0.2);
+$form-default-focus-border-color: rgba(#000, 0.6);
+$form-default-color: #000;
+$form-default-placeholder-color: rgba(#000, 0.5);
+
+$form-error-label-color: red;
+$form-error-border-color: rgba(red, 0.2);
+$form-error-focus-border-color: rgba(red, 0.6);
+$form-error-color: red;
+$form-error-placeholder-color: rgba(red, 0.5);
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $form-margin-bottom;
+
+  label {
+    margin-bottom: 4px;
+    color: $form-default-label-color;
+    font-size: $form-label-font-size;
+    font-weight: $form-label-font-weight;
+  }
+
+  &.is-error {
+    label {
+      color: $form-error-label-color;
+    }
+
+    .form-control {
+      border-color: $form-error-border-color;
+      color: $form-error-color;
+
+      &::placeholder {
+        color: $form-error-placeholder-color;
+      }
+
+      &:focus {
+        border-color: $form-error-focus-border-color;
+      }
+    }
+  }
+
+  .form-control {
+    height: $form-height;
+    padding: $form-padding;
+    border: $form-default-border;
+    border-radius: $form-border-radius;
+    color: $form-default-color;
+    font-size: $form-font-size;
+    font-weight: $form-font-weight;
+
+    &::placeholder {
+      color: $form-default-placeholder-color;
+    }
+
+    &:focus {
+      border-color: $form-default-focus-border-color;
+    }
+  }
+
+  textarea.form-control {
+    height: auto;
+  }
+
+  select.form-control {
+    height: auto;
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr" class="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}{% endblock %} - Baran Somaklı</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1" />
+    <meta name="content-language" content="tr" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="" />
+
+    <!-- og -->
+    <meta property="og:locale" content="tr" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="/dist/img/og.jpg" />
+    <meta property="og:see_also" content="" />
+    <meta property="og:see_also" content="" />
+    <meta property="og:see_also" content="" />
+    <meta property="og:see_also" content="" />
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:image" content="" />
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/dist/img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/dist/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/dist/img/favicon/favicon-16x16.png" />
+    <link rel="shortcut icon" href="/dist/img/favicon/favicon.ico" />
+
+    <link rel="stylesheet" href="dist/css/main.min.css" />
+    {% block headerStyle %}{% endblock %}
+  </head>
+  <body class="{%block bodyClass %}{% endblock %}">
+    {% include "../partials/header.html" %} {% block content %}{% endblock %} {% include "../partials/footer.html" %}
+
+    <script src="dist/js/lib.min.js"></script>
+    <script src="dist/js/core.min.js"></script>
+    {% block footerScript %}{% endblock %}
+  </body>
+</html>

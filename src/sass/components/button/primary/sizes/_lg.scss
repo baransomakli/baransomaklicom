@@ -1,0 +1,13 @@
+.btn.btn-primary.btn-lg {
+  padding: $btn-lg-padding;
+  border-radius: $btn-lg-border-radius;
+  font-size: $btn-lg-font-size;
+  line-height: $btn-lg-font-height;
+
+  &.btn-icon {
+    svg {
+      width: $btn-lg-icon-size;
+      height: $btn-lg-icon-size;
+    }
+  }
+}

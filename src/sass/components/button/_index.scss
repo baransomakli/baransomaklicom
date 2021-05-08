@@ -1,0 +1,15 @@
+.btn {
+  @include bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: $btn-transition;
+
+  i svg {
+    path,
+    rect,
+    line {
+      // transition: $btn-icon-transition;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+header {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	@include mdq(xs) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.header-logo {
+		svg {
+			transition: all;
+			-webkit-animation-name: pulse;
+			animation-name: pulse;
+			-webkit-animation-duration: 2s;
+			animation-duration: 2s;
+			-webkit-animation-iteration-count: infinite;
+			animation-iteration-count: infinite;
+			-webkit-animation-timing-function: ease-in-out;
+			animation-timing-function: ease-in-out;
+			&:hover {
+
+			}
+			@keyframes pulse {
+				0% { fill: #DD3516; }
+				25% { fill: white; }
+				50% { fill: #F7F6EB; }
+				75% { fill: #A0775A; }
+				100% { fill: #DD3516; transform: rotate(360deg);}
+			}
+		}
+	}
+	.header-action {
+		.btn-primary {
+			i {
+				padding-left: 8px;
+			}
+			&:hover {
+				svg {
+					path {
+						stroke: $color-primary;
+					}
+				}
+			}
+		}
+
+	}
+}

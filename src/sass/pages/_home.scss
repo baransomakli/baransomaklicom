@@ -1,0 +1,23 @@
+.works,
+.interview,
+.articles {
+	margin-bottom: 100px;
+}
+
+.repeat-list {
+	.list-item {
+		border-bottom: 1px solid rgba($color-white, 0.5);
+		a {
+			display: flex;
+			@include light;
+			padding: 20px 0;
+			color: $color-white;
+			font-size: 18px;
+			line-height: 18px;
+			@include mdq(xs) {
+				font-size: 16px;
+				line-height: 32px;
+			}
+		}
+	}
+}

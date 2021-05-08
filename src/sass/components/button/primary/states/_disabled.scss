@@ -1,0 +1,13 @@
+.btn.btn-primary:disabled {
+  background-color: $btn-primary-disabled-bg;
+  border-color: $btn-primary-disabled-border-color;
+  color: $btn-primary-disabled-color;
+  cursor: not-allowed;
+  user-select: none;
+
+  &:hover {
+    background-color: $btn-primary-disabled-bg;
+    border-color: $btn-primary-disabled-border-color;
+    color: $btn-primary-disabled-color;
+  }
+}

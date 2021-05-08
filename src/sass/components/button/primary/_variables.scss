@@ -1,0 +1,19 @@
+$btn-primary-bg: $color-primary;
+$btn-primary-color: #fff;
+$btn-primary-border-color: #fff;
+
+$btn-primary-hover-bg: #fff;
+$btn-primary-hover-color: #030303;
+$btn-primary-hover-border-color: $btn-primary-hover-bg;
+
+$btn-primary-active-bg: #004ad7;
+$btn-primary-active-color: #fff;
+$btn-primary-active-border-color: $btn-primary-active-bg;
+
+$btn-primary-focus-bg: #004ad7;
+$btn-primary-focus-color: #fff;
+$btn-primary-focus-border-color: $btn-primary-focus-bg;
+
+$btn-primary-disabled-bg: rgba($btn-primary-bg, 0.5);
+$btn-primary-disabled-color: #fff;
+$btn-primary-disabled-border-color: transparent;

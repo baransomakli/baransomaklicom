@@ -1,0 +1,13 @@
+.btn.btn-primary-outline.btn-sm {
+  padding: $btn-sm-padding;
+  border-radius: $btn-sm-border-radius;
+  font-size: $btn-sm-font-size;
+  line-height: $btn-sm-font-height;
+
+  &.btn-icon {
+    svg {
+      width: $btn-sm-icon-size;
+      height: $btn-sm-icon-size;
+    }
+  }
+}

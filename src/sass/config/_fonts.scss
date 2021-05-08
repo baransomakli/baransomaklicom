@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+@mixin regular {
+  font-family: 'Libre Caslon Text', serif;;
+  font-weight: 400;
+}
+
+@mixin light {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+}
+
+@mixin bold {
+  font-family: 'Libre Caslon Text', serif;;
+  font-weight: 700;
+}

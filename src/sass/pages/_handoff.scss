@@ -1,0 +1,127 @@
+body.handoff {
+  header,
+  footer {
+    display: none;
+  }
+}
+
+section.handoff-hero {
+  flex-shrink: 0;
+  padding-top: 76px;
+  padding-bottom: 76px;
+  background-color: #030303;
+  text-align: center;
+
+  h1 {
+    @include regular;
+    margin-bottom: 32px;
+    color: $white;
+    font-size: 42px;
+    line-height: 150%;
+  }
+
+  p {
+    @include regular;
+    color: $white;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+
+section.handoff-body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .handoff-body-page-list {
+    ul {
+      list-style: none;
+
+      li {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+          margin-bottom: 26px;
+        }
+
+        &:hover::before {
+          width: 50px;
+        }
+
+        &::before {
+          display: flex;
+          width: 40px;
+          height: 1px;
+          margin-right: 16px;
+          background-color: #030303;
+          content: '';
+          transition: 0.3s width;
+        }
+
+        a {
+          @include regular;
+          color: #030303;
+          font-size: 14px;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+
+  .handoff-body-style-guide {
+    &-item {
+      &:not(:last-child) {
+        margin-bottom: 100px;
+      }
+
+      &-title {
+        margin-bottom: 50px;
+
+        h5 {
+          @include regular;
+          display: flex;
+          align-items: center;
+          color: #030303;
+          font-size: 14px;
+          line-height: 150%;
+
+          &::before {
+            width: 40px;
+            height: 1px;
+            margin-right: 16px;
+            background-color: #030303;
+            content: '';
+          }
+        }
+      }
+    }
+  }
+}
+
+section.handoff-footer {
+  flex-shrink: 0;
+
+  .handoff-footer-contain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 36px;
+    border-top: 1px solid rgba(#030303, 0.5);
+
+    a,
+    p {
+      @include regular;
+      color: #030303;
+      font-size: 14px;
+      line-height: 150%;
+    }
+
+    a:hover {
+      text-decoration: underline !important;
+    }
+  }
+}

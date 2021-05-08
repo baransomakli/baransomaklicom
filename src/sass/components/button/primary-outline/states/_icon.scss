@@ -1,0 +1,37 @@
+.btn.btn-primary-outline.btn-icon {
+  i svg {
+    path,
+    rect,
+    line {
+      fill: $btn-primary-outline-color;
+    }
+  }
+
+  &:hover {
+    i svg {
+      path,
+      rect,
+      line {
+        fill: $btn-primary-outline-hover-color;
+      }
+    }
+  }
+
+  &.btn-icon-left {
+    flex-direction: row;
+
+    i {
+      display: flex;
+      margin-right: 4px;
+    }
+  }
+
+  &.btn-icon-right {
+    flex-direction: row-reverse;
+
+    i {
+      display: flex;
+      margin-left: 4px;
+    }
+  }
+}

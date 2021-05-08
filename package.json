@@ -1,0 +1,63 @@
+{
+  "name": "baseworkstudio",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "author": "BASEWORKSTUDIO",
+  "license": "ISC",
+  "description": "",
+  "scripts": {
+    "dev": "gulp",
+    "prod": "NODE_ENV=production gulp",
+    "lint": "stylelint --syntax scss \"src/sass/**/*.scss\"",
+    "format": "stylelint --fix --syntax scss \"src/sass/**/*.scss\""
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.0",
+    "bootstrap": "^4.6.0",
+    "bower": "^1.8.4",
+    "browser-sync": "^2.26.7",
+    "del": "^6.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-header": "^2.0.5",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-nunjucks-render": "^2.2.2",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.1",
+    "jquery": "^3.6.0",
+    "node-sass-magic-importer": "^5.3.2",
+    "nunjucks": "^3.2.0",
+    "owl.carousel": "^2.3.4",
+    "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
+    "stylelint-declaration-strict-value": "^1.7.5",
+    "stylelint-no-px": "^1.0.1",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0"
+  },
+  "devDependencies": {
+    "@atolye15/stylelint-config": "^1.3.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb-standard": "^3.1.0",
+    "gulp-babel": "^8.0.0",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "stylelint": "^13.6.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-prettier": "^1.1.2"
+  }
+}
